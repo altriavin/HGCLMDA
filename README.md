@@ -21,7 +21,7 @@ python HGCLMDA.py
 
 # Cite
 If you want to use our codes and datasets in your research, please cite:
-'''
+```
 @article{doi:10.1021/acs.jcim.3c00957,
   author = {Hu, Xiaowen and Dong, Yihan and Zhang, Jiaxuan and Deng, Lei},
   title = {HGCLMDA: Predicting mRNA–Drug Sensitivity Associations via Hypergraph Contrastive Learning},
@@ -35,4 +35,4 @@ If you want to use our codes and datasets in your research, please cite:
   URL = {https://doi.org/10.1021/acs.jcim.3c00957},
   eprint = {https://doi.org/10.1021/acs.jcim.3c00957}
 }
-'''
+```
