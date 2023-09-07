@@ -18,3 +18,21 @@ In addition, in order to verify the performance of HGCLMDA on sparse datasets, w
 ```
 python HGCLMDA.py
 ```
+
+# Cite
+If you want to use our codes and datasets in your research, please cite:
+'''
+@article{doi:10.1021/acs.jcim.3c00957,
+  author = {Hu, Xiaowen and Dong, Yihan and Zhang, Jiaxuan and Deng, Lei},
+  title = {HGCLMDA: Predicting mRNA–Drug Sensitivity Associations via Hypergraph Contrastive Learning},
+  journal = {Journal of Chemical Information and Modeling},
+  volume = {0},
+  number = {0},
+  pages = {null},
+  year = {0},
+  doi = {10.1021/acs.jcim.3c00957},
+  note ={PMID: 37674276},
+  URL = {https://doi.org/10.1021/acs.jcim.3c00957},
+  eprint = {https://doi.org/10.1021/acs.jcim.3c00957}
+}
+'''
