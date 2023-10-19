@@ -23,11 +23,6 @@ class DataHandler:
         self.tstfile = predir + 'test_data.pkl'
         self.validfile = predir + "valid_data.pkl"
 
-    '''
-    trnMat
-    (x,y)\t1.0\n
-    '''
-
     def LoadData(self):
         if args.percent > 1e-8:
             print('noised')

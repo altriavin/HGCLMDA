@@ -43,11 +43,11 @@ class hgclmda():
             posset = np.reshape(np.argwhere(temLabel[i] != 0), [-1])
             sampNum = min(args.sampNum, len(posset))
             if sampNum == 0:
-                poslocs = [np.random.choice(args.item)]
+                poslocs = [np.random.choice(args.drug)]
                 neglocs = [poslocs[0]]
             else:
                 poslocs = np.random.choice(posset, sampNum)
-                neglocs = negSamp(temLabel[i], sampNum, args.item)
+                neglocs = negSamp(temLabel[i], sampNum, args.drug)
             for j in range(sampNum):
                 posloc = poslocs[j]
                 negloc = neglocs[j]
@@ -63,7 +63,7 @@ class hgclmda():
     def trainEpoch(self):
         args.actFunc = 'leakyRelu'
 
-        sfIds = np.random.permutation(args.user)
+        sfIds = np.random.permutation(args.mRNA)
         epochLoss, epochPreLoss, epochsslloss, epochregloss = [0] * 4
         num = len(sfIds)
         steps = int(np.ceil(num / args.batch))
